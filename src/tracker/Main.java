@@ -1,9 +1,10 @@
 package tracker;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		ExpenseManager manager = new ExpenseManager();
 		Scanner s = new Scanner(System.in); // displays menu and takes user input for choice
@@ -32,12 +33,15 @@ public class Main {
 				System.out.println("Total: Rs" + manager.getTotal());
 				break;
 			case 4:
+				manager.viewFromFile();
+				break;
+			case 5:
 				System.out.println("Exiting...");
 				break;
 				default:
 					System.out.println("Invalid choice! ");
 			}
-		} while (choice != 4);
+		} while (choice != 5);
 		s.close();
 	}
 
