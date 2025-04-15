@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ExpenseManager manager = new ExpenseManager();
-		Scanner s = new Scanner(System.in);
+		Scanner s = new Scanner(System.in); // displays menu and takes user input for choice
 		int choice;
 		System.out.println("Expense Tracker");
 		do {
@@ -15,7 +15,7 @@ public class Main {
 			choice = s.nextInt();
 			s.nextLine();
 			
-			switch(choice) {
+			switch(choice) { // swicth cases
 			case 1:
 				System.out.println("Enter description: ");
 				String desc = s.nextLine();
