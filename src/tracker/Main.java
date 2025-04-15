@@ -35,7 +35,7 @@ public class Main {
 				System.out.println("Exiting...");
 				break;
 				default:
-					System.out.println("Onvalie chpice! ");
+					System.out.println("Invalid choice! ");
 			}
 		} while (choice != 4);
 		s.close();
