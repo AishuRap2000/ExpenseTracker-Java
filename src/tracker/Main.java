@@ -21,7 +21,9 @@ public class Main {
 				String desc = s.nextLine();
 				System.out.println("Enter amount: ");
 				double amount = s.nextDouble();
-				manager.addExpense(desc, amount);
+				System.out.println("Enter category (example. Food, Travel, Bills): ");
+				String category = s.nextLine();
+				manager.addExpense(desc, amount, category);
 				break;
 			case 2:
 				manager.viewExpense();
